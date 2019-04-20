@@ -10,7 +10,7 @@ void fillEmployees(string names[50], int salaries[50][4], int N) {
 			cin >> salaries[i][j]; //User inputs the employee salaries.
 			while (cin.fail()) { //Checks if 'salaries' is a valid integer.
 				system("CLS");
-				cout << endl << "Please enter an integer." << endl;
+				cout << endl << "Please enter "<< names[i] << "'s salary in Quarter " << j+1 << endl;
 				cin.clear(); //Clears cin error flag.
 				cin.ignore(10000, '\n'); //Clears cin buffer for the current line.
 				cin >> salaries[i][j]; //User inputs 'salaries' again.
